@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: blueviolet;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+    background-blend-mode: multiply, multiply;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+header {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding: 0px;
+}
+
+.div-description {
+    text-align: center;
+}
+
+#survey-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    padding-bottom: 60px;
+    background-color: #fff;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+.div-option {
+    margin-bottom: 20px;
+}
+
+.div-option label {
+    display: inline;
+}
+
+.div-option input {
+    display: inline;
+    margin: 0;
+    width: max-content;
+    background-color: black;
+}
+
+.div-checkbox {
+    margin-bottom: 20px;
+}
+
+.div-checkbox input {
+    display: inline;
+    margin: 0;
+    width: max-content;
+}
+
+.div-checkbox label {
+    display: inline;
+}
+
+.input-sombra:focus {
+    outline: 1px solid white;
+
+}
+
+select:focus {
+    outline: 1px solid white;
+}
+
+input,
+textarea {
+    color: white;
+    outline: none;
+}
+
+input {
+    border-radius: 4px;
+}
+
+
+select {
+    border-radius: 4px;
+    padding-right: 100px;
+    outline: none;
+}
+
+textarea:focus {
+    outline: 1px solid white;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background-color: transparent;
+}
+
+input::placeholder {
+    color: rgb(207, 207, 207);
+}
+
+select {
+    color: white;
+}
+
+option {
+    padding: 10px;
+    background: gray;
+}
+
+textarea::placeholder {
+    color: rgb(207, 207, 207);
+}
+
+textarea {
+    resize: none;
+}
+
+.div-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 50%;
+    height: 50px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+    border-radius: 30px;
+    z-index: -1;
+    transform: translateX(-100%);
+    background-color: gray;
+
+}
+
+button:hover::before {
+    transform: translateX(0);
+}
+
+input[type="number"] {
+    font-size: 16px;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button {
+    display: none;
+}
